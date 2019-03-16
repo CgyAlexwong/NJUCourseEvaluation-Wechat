@@ -1,0 +1,108 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 我的主页
+    </navigator>
+  </view>
+</view>
+
+  <view class="cu-form-group margin-top">
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+      <view class="picker">
+        <text id='chooseTerm'>{{index?picker[index]:'请选择某一学期'}}</text>
+      </view>
+    </picker>
+  </view>
+
+
+
+<view id="class0" hidden="{{class0}}">
+<block wx:for="{{classes0}}" wx:for-item="lip" wx:for-index="{{index}}">
+<view class="cu-bar bg-white margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text>{{lip.name}} ({{lip.teacher}})
+  </view>
+
+  <view class='action'>
+    <button  class='cu-btn block line-blue margin-tb-sm lg' bindtap="showDialogBtn" data-id="{{lip.id}}" data-target="DialogModal1" disabled="{{lip.disabled}}">{{lip.status}}</button>
+  </view>
+</view>
+</block>
+</view>
+
+<view id="class1" hidden="{{class1}}">
+<block wx:for="{{classes1}}" wx:for-item="lip" wx:for-index="{{index}}">
+<view class="cu-bar bg-white margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text>{{lip.name}} ({{lip.teacher}})
+  </view>
+
+  <view class='action'>
+    <button  class='cu-btn block line-blue margin-tb-sm lg' bindtap="showDialogBtn" data-id="{{lip.id}}" data-target="DialogModal1" disabled="{{lip.disabled}}">{{lip.status}}</button>
+  </view>
+</view>
+</block>
+</view>
+
+<view id="class2" hidden="{{class2}}">
+<block wx:for="{{classes2}}" wx:for-item="lip" wx:for-index="{{index}}">
+<view class="cu-bar bg-white margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text>{{lip.name}} ({{lip.teacher}})
+  </view>
+
+  <view class='action'>
+    <button  class='cu-btn block line-blue margin-tb-sm lg' bindtap="showDialogBtn" data-id="{{lip.id}}" data-target="DialogModal1" disabled="{{lip.disabled}}">{{lip.status}}</button>
+  </view>
+</view>
+</block>
+</view>
+
+<view id="class3" hidden="{{class3}}">
+<block wx:for="{{classes3}}" wx:for-item="lip" wx:for-index="{{index}}">
+<view class="cu-bar bg-white margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text>{{lip.name}} ({{lip.teacher}})
+  </view>
+
+  <view class='action'>
+    <button  class='cu-btn block line-blue margin-tb-sm lg' bindtap="showDialogBtn" data-id="{{lip.id}}" data-target="DialogModal1" disabled="{{lip.disabled}}">{{lip.status}}</button>
+  </view>
+</view>
+</block>
+</view>
+
+
+
+<!--弹窗-->
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+
+    <view class="modal-title">你的评价</view>
+
+      <view class="cu-dialog">
+        <view>
+        <view class="zan-font-16 my-ib star" bindtap="myStarChoose">
+            <block wx:for="{{starMap}}">
+                <text wx:if="{{star>=index+1}}" style="padding-right: .5em" class="text-orange text-xxl" data-star="{{index+1}}">★</text>
+                <text wx:if="{{star<index+1}}" style="padding-right: .5em" class="zan-c-gray-dark text-xxl" data-star="{{index+1}}">☆</text>
+            </block>
+        </view>
+        <!--★-->
+        
+    <view class="modal-content">
+      <view class="cu-form-group" wx:hide="{{modalName==null}}">
+    <textarea placeholder="请在这里输入你对这门课程的评价" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">提交</view>
+    </view>
+  </view>
+
+
+
+    
+  </view>
+</view>

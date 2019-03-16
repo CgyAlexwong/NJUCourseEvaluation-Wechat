@@ -1,0 +1,18 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-green" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 我的主页
+    </navigator>
+  </view>
+</view>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于这个Demo</view>
+  <view class='text-content'>
+    <view>Hi！欢迎试用这个项目的Demo</view>
+    <view class='margin-top-sm'>该项目是我们团队开发的一款可用于评价课程以及通过一些课程评价来挑选合适自己的通识、研讨课等的微信小程序，虽然功能有点类似与MiCourse，但是考虑到设计成微信小程序更加便捷，同学们使用起来也会更加方便，相信会具有较好的实用性！</view>
+    <view class='margin-top-sm'>如果各位评委对我们这个软件有什么建议的话可以在意见反馈中给我们留言哦，我们希望可以将这个小程序开发得更加完善！</view>
+    <view class='margin-top-sm'>由于只有短短的6天时间，故该项目有部分功能仍未完善，各位评委老师可以尝试一下已经开发完成的功能，还希望手下留情鸭！</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+  </view>
+</view>
