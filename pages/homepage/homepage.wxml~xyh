@@ -1,0 +1,61 @@
+<view class='UCenter-bg'>
+  <view class='headView'>
+    <open-data class='icon' mode='aspectFit' type='userAvatarUrl'></open-data>
+  </view>
+  <view class='text-xl'>
+    <open-data type="userNickName" lang="zh_CN"></open-data>  
+  </view>
+  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+</view>
+
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+  <view class="cu-item arrow">
+    <navigator class='content' url='comment/comment' hover-class='none'>
+      <image src='../images/commented.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>评价课程</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' url='../about/about' hover-class='none'>
+      <image src='../images/favorite.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>我关注的课程</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' url='feedback/feedback' hover-class='none'>
+      <image src='../images/feedback.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>意见反馈</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <navigator class='content' url='about/about' hover-class='none'>
+      <image src='../images/about.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>关于</text>
+    </navigator>
+  </view>
+  <view class="cu-item arrow">
+    <view class='content' bindtap="onExit">
+      <image src='../images/exit.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>退出</text>
+    </view>
+  </view>
+
+
+  <view class="cu-modal {{modalName}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url('../images/sorry.png');height:400px;">
+      <view class="cu-bar justify-end text-white">
+        <view class='action' bindtap='hideModal'>
+          <text class='icon-close '></text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-bar bg-white">
+      <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>我知道了</view>
+    </view>
+  </view>
+</view>
+
+ </view>
+
+<view class='cu-tabbar-height'></view>

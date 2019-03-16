@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/homepage/homepage",
+    "pages/seminar/seminar",
+    "pages/generalCourse/generalCourse",
+    "pages/publicCourse/publicCourse",
+    "pages/classicsReading/classicsReading",
+    "pages/PECourse/PECourse",
+    "pages/RequiredCourse/RequiredCourse",
+    "pages/courseDetail/courseDetail",
+    "pages/courseContent/courseContent"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "NJU课程评价系统",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2D3D59",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/select_home.png"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "个人中心",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/select_user.png"
+      }
+    ]
+  }
+}

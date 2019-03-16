@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/homepage/homepage",
+<<<<<<< HEAD
+    "pages/seminar/seminar",
+    "pages/generalCourse/generalCourse",
+    "pages/publicCourse/publicCourse",
+    "pages/classicsReading/classicsReading",
+    "pages/PECourse/PECourse",
+    "pages/RequiredCourse/RequiredCourse",
+    "pages/courseDetail/courseDetail",
+    "pages/courseContent/courseContent"
+=======
+    "pages/homepage/comment/comment",
+    "pages/homepage/about/about",
+    "pages/homepage/feedback/feedback"
+>>>>>>> 500e06a9007217484befd9024e74f2f481d8e91d
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "NJU课程评价系统",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2D3D59",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+<<<<<<< HEAD
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/select_home.png"
+=======
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/select_home.png"
+>>>>>>> 500e06a9007217484befd9024e74f2f481d8e91d
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "个人中心",
+<<<<<<< HEAD
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/select_user.png"
+=======
+        "iconPath": "pages/images/user.png",
+        "selectedIconPath": "pages/images/select_user.png"
+>>>>>>> 500e06a9007217484befd9024e74f2f481d8e91d
+      }
+    ]
+  }
+}
